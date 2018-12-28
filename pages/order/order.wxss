@@ -1,0 +1,52 @@
+page{
+  background-color:#f8f8f8;
+}
+.order{
+  background-color: #fff;
+  width: 100vw;
+  height: 444rpx;
+  margin-bottom: 20rpx;
+}
+.time{
+  float: left;
+}
+.state{
+  float:right;
+}
+.buy_time{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size:36rpx;
+  font-family:"微软雅黑";
+  padding: 0 2vw;
+  border-bottom: 2rpx solid #eee;
+  color: #999;
+}
+.buy_con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top:40rpx;
+}
+.buy_con{
+  width: 92vw;
+  padding: 0 4vw;
+  height: 240rpx; 
+  border-bottom:2rpx solid #eee;
+  background-color: #fff;
+}
+.name{
+  float: right;
+  padding: 2vw 0;
+  font-family: "微软雅黑";
+  font-size: 40rpx;
+  color: #061010;
+}
+.buy_price{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size:36rpx;
+  font-family:"微软雅黑";
+  padding: 0 2vw;
+}

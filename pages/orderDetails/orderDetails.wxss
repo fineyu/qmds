@@ -1,0 +1,242 @@
+page{
+  background-color: #f8f8f8;
+}
+.top{
+  width:720rpx;
+  height:192rpx;
+  margin: auto;
+  position: relative;
+}
+.top image{
+  width:720rpx;
+  height:192rpx;
+  margin: auto;
+}
+.top text:nth-child(2){
+  position:absolute;
+  color:#fff;
+  font-family:"微软雅黑";
+  font-size:28rpx;
+  left:38rpx;
+  top:65rpx;
+}
+.top text:nth-child(3){
+  position:absolute;
+  color:#57c340;
+  font-family:"微软雅黑";
+  font-size:28rpx;
+  right:68rpx;
+  top:69rpx;
+}
+/* 地址 */
+.adress{
+  width:720rpx;
+  height:170rpx;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+.adress view{
+  font-family:"微软雅黑";
+  font-size:30rpx;
+  color:#061010;
+  display:block;
+  float:left;
+  margin-top:30rpx;
+  width: 100%;
+}
+.adress .ad_top text:nth-child(1){
+  float: left;
+  display: block;
+  margin-left:20rpx;
+
+}
+.adress .ad_top text:nth-child(2){
+  float: right;
+  display: block;
+  margin-right: 20rpx;
+}
+.ad_detail{
+  margin-left: 20rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+/* 商品 */
+.header{
+  width:680rpx;
+  height:60rpx;
+  line-height:60rpx;
+  margin:auto;
+  margin-top:12rpx;
+  background-color:#fff;
+  padding:0 20rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.header image{
+  width: 50rpx;
+  height:50rpx;
+  position:relative;
+  top:5rpx;
+  float: left;
+}
+.header text:nth-child(2){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  float: left;
+  color: #061010;
+}
+.header text:nth-child(3){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  float: right;
+   color: #57c340 !important;
+}
+.con{
+  width: 720rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #fff;
+  margin: auto;
+  border-bottom: 2rpx solid #eee;
+}
+.w_pay{
+  width: 720rpx;
+  background-color: #fff;
+  margin: 20rpx 0;
+  /* display: inline-block; */
+}
+.con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:100rpx;
+  width:500rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(1){
+ float:left;
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  line-height:60rpx;
+  width:49vw;
+  height:63px;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(2){
+  float:right;
+  display:block;
+  height:100rpx;
+  width:13vw;
+  line-height:60rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+ 
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:500rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  float: right;
+}
+.all_price{
+  width:680rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin: auto;
+}
+.all_price .pay_money{
+  float: right;
+  font-family: "微软雅黑";
+  color: #061010;
+  font-size: 28rpx;
+}
+.all_price  .after{
+  width:140rpx;
+  height:10rpx;
+  line-height:10rpx;
+  padding:20rpx;
+  text-align:center;
+  font-family:"微软雅黑";
+  font-size:28rpx;
+  float:left;
+  margin-top:9rpx;
+  margin-right:20rpx;
+  border-radius:30rpx;
+  color: #666;
+  background-color: #fff;
+  border: 2rpx solid #c1c1c1;
+}
+.list{
+  width:680rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  margin: auto;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+}
+.list text:nth-child(1){
+  font-family: "微软雅黑";
+  font-size:  28rpx;
+  color: #061010;
+  float: left;
+}
+.list text:nth-child(2){
+  font-family: "微软雅黑";
+  font-size:  28rpx;
+  color: #061010;
+  float: right;
+}
+.order_detail{
+  margin-top: 30rpx;
+}
+.footer{
+  width:100%;
+  height:90rpx;
+  background-color:#fff;
+  line-height:90rpx;
+  position:fixed;
+  bottom:0;
+}
+.footer text{
+  width:140rpx;
+  height:20rpx;
+  line-height:20rpx;
+  padding:20rpx;
+  text-align:center;
+  font-family:"微软雅黑";
+  font-size:28rpx;
+  float:right;
+  margin-top:15rpx;
+  margin-right:20rpx;
+  border-radius:30rpx;
+
+}
+.green{
+  color:#fff;
+  background-color:#57c340;
+}
+.gray{
+  color: #666;
+  background-color: #fff;
+  border: 2rpx solid #666;
+}

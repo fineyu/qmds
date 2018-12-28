@@ -1,0 +1,16 @@
+ <view wx:for="{{array}}" class='order'>
+  <!-- 购买时间 -->
+  <view class='buy_time'>
+      <view class='time'>{{item.time}}</view>
+      <view class='state'>{{item.state}}</view>
+  </view>
+  <!-- 购买的商品 -->
+  <view class='buy_con'>
+      <image src='{{item.src}}' mode="aspectFit"></image>
+      <text class='name'>{{item.name}}</text>
+  </view>
+  <!-- 购买的价格 -->
+  <view class='buy_price'>
+      <text>共{{item.num}}件商品，实付￥{{item.price}}</text>
+  </view>
+</view>

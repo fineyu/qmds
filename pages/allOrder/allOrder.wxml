@@ -1,0 +1,181 @@
+<!--pages/allOrder/allOrder.wxml-->
+<!-- 导航 -->
+<view class='nav_height'></view>
+<view class='nav'>
+  <view class=' {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>全部</view>
+  <view class='w_deliver  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent' >待付款</view>
+  <view class='w_receive  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>待发货</view>
+  <view class='w_comment  {{currentData == 3 ? "tabBorer" : ""}}'  data-current = "3" bindtap='checkCurrent'>待收货</view>
+  <view class='affter  {{currentData == 4 ? "tabBorer" : ""}}'  data-current = "4" bindtap='checkCurrent'>待评价</view>
+  <view class='affter  {{currentData == 5 ? "tabBorer" : ""}}'  data-current = "5" bindtap='checkCurrent'>售后</view>
+</view>
+<view current="{{currentData}}" class='swiper'  bindchange="bindchange">
+<!-- 待付款 -->
+  <view  class='nonews {{allOrder==""?"":"none"}}'><image src='{{noneSrc}}'  mode="aspectFit"></image></view>
+  <view  class='swiper_item' >
+      
+      <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay'>
+          <view class='header'>
+              <image src="{{item.gys_img_url}}"></image>
+              <text>{{item.gys_name}}</text><text>{{item.status_name}}</text>
+          </view>
+          <view class='con'  bindtap='orderDetails'  data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}' mode="aspectFit"></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister' data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green'  bindtap='comment' data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green'  bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green' bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}"  bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green'  bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}" bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view> 
+  <!-- 待付款 -->
+  <view  class='swiper_item'>
+      <!-- <view  hidden='{{hidden}}'>暂无数据...</view> -->
+      <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay' >
+          <view class='header'>
+           <image src="{{item.gys_img_url}}"></image>
+          <text>{{item.gys_name}}</text><text>{{item.status_name}}</text></view>
+          <view class='con' bindtap='orderDetails'  data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}'></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister' data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green' bindtap='comment'  data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green' bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green' bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}" bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green'  bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}"  bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view> 
+  <!-- 待发货 -->
+  <view  class='swiper_item'>
+    <!-- <view  hidden='{{hidden}}'>暂无数据...</view> -->
+    <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay'>
+          <view class='header'> <image src="{{item.gys_img_url}}"></image><text>{{item.gys_name}}</text><text>{{item.status_name}}</text></view>
+          <view class='con'  bindtap='orderDetails' data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}'></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister' data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green'  bindtap='comment'  data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green' bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green' bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}" bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green' bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}"  bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view>
+  <!-- 待收货 -->
+  <view  class='swiper_item'>
+    <!-- <view  hidden='{{hidden}}'>暂无数据...</view> -->
+    <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay' >
+          <view class='header'> <image src="{{item.gys_img_url}}"></image><text>{{item.gys_name}}</text><text>{{item.status_name}}</text></view>
+          <view class='con' bindtap='orderDetails'  data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}'></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister' data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green'  bindtap="comment"  data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green'  bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green' bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}" bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green'  bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}"  bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view> 
+  <!-- 待评价 -->
+  <view  class='swiper_item'>
+    <!-- <view  hidden='{{hidden}}'>暂无数据...</view> -->
+    <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay'>
+          <view class='header'> <image src="{{item.gys_img_url}}"></image><text>{{item.gys_name}}</text><text>{{item.status_name}}</text></view>
+          <view class='con' bindtap='orderDetails'  data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}'></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister'  data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green'  bindtap='comment'  data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green' bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green' bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}" bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green'   bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}"  bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view> 
+  <!-- 售后 -->
+  <view  class='swiper_item'>
+    <!-- <view  hidden='{{hidden}}'>暂无数据...</view> -->
+    <view class='swiper_con'>
+        <view  wx:for="{{allOrder}}" class='w_pay' >
+          <view class='header'> <image src="{{item.gys_img_url}}"></image><text>{{item.gys_name}}</text><text>{{item.status_name}}</text></view>
+          <view class='con'  bindtap='orderDetails'  data-index='{{index}}'>
+              <image src='{{item.goods[0].img_url}}'></image>
+              <view class='con_top'><text>{{item.goods[0].goods_name}}</text><text>￥{{item.goods[0].price}}</text></view>
+              <view class='con_bottom'><text>x{{item.goods[0].goods_num}}</text></view>
+          </view>
+          <view class='all_price'>
+            共计{{item.goods[0].goods_num}}件商品，合计<text>(包含运费)</text><text>￥{{item.money}}</text>  
+          </view>
+          <view class='pay_footer'>
+            <text  wx:if="{{item.status==4||item.status==3}}" bindtap='seelogister'  data-index='{{index}}'>查看物流</text>
+            <text  wx:if="{{item.status==4}}" class='green'  bindtap='comment'  data-index='{{index}}'>评价</text>
+            <text  wx:if="{{item.status==3}}" class='green'  bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+            <text  wx:if="{{item.status==2}}" class='green'  bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+            <text  wx:if="{{item.status==1}}" bindtap='clickCancel' data-index='{{index}}'>取消</text>
+            <text  wx:if="{{item.status==1}}" class='green'  bindtap='clickPay' data-index='{{index}}'>付款</text>
+            <text  wx:if="{{item.status==6}}"  bindtap='clickDelate' data-index='{{index}}'>删除订单</text>
+            <text  wx:if="{{item.status==7}}"bindtap='detailsClick' data-index='{{index}}'  class='green'>查看详情</text>
+          </view>
+        </view>
+      </view>
+  </view> 
+</view> 

@@ -1,0 +1,295 @@
+/* pages/drawback/drawback.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.apply{
+  height: 300rpx;
+  width: 100vw;
+  background-color: #fff;
+}
+.header{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96vw;
+  background-color: #fff;
+  color: #061010;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  padding: 0 2vw;
+}
+.header text{
+  color: red;
+}
+.con{
+  width: 100vw;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #f8f8f8;
+}
+.con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(1){
+   display: block;
+  float:left;
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  line-height:60rpx;
+  width:49vw;
+  height:63px;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(2){
+  float:right;
+  display:block;
+  height:100rpx;
+  width:21vw;
+  line-height:60rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+ 
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  float: right;
+}
+.all_price {
+  width: 98vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+  padding-right: 2vw;
+}
+.detail{
+  margin-top: 40rpx;
+}
+.detail view{
+  border-bottom: 2rpx solid #eee;
+}
+.detail view:last-child{
+  border-bottom:0;
+}
+.reason{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+}
+.reason text:nth-child(1){
+  color: red;
+}
+.reason input{
+  float: right;
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.reason view{
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.price{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+}
+.price text:nth-child(1){
+  color: red;
+}
+.price view{
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.choose{
+  height: 280rpx;
+  margin-top: 40rpx;
+  background-color: #fff;
+}
+.choose_con{
+  height:200rpx;
+  width: 100vw;
+}
+.choose_con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 12rpx;
+}
+.submit{
+  width: 100vw;
+  height: 100rpx;
+  background-color: #f9f9f9;
+  position: fixed;
+  bottom: 0rpx;
+}
+.submit button{
+  width: 70vw;
+  height: 90rpx;
+  background-color: #57c340;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  /* position: fixed;
+  bottom: 0rpx; */
+  margin-left: 15vw;
+}
+.footer_height{
+  width: 70vw;
+  height: 100rpx;
+  margin: 10rpx 0;
+}
+.picker-view-column{
+  text-align: center;
+}
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.pop{
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+.pop text{
+  margin: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+
+/* 测试 */
+.commodity_attr_box {
+  width: 94%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding:20rpx 3%;
+}
+.way{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+}
+.way text:nth-child(1){
+  color: red;
+}
+.way view{
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.name{
+   width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+}
+.name text:nth-child(1){
+  color: red;
+}
+.name input{
+  float: right;
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+    color: #999 !important;
+
+}
+.phone{
+   width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+}
+.phone text:nth-child(1){
+  color: red;
+}
+.phone input{
+  float: right;
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #999 !important;
+
+}
+.choose input{
+  width: 91%;
+  height: 200rpx;
+  border: 1rpx solid #eee;
+  margin: auto;
+  border-radius: 20rpx;
+  padding: 0 2%;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #999;
+}
+
+
+
+

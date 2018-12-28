@@ -1,0 +1,48 @@
+<!--pages/newAdress/newAdress.wxml-->
+<view class='all'>
+  <view class='addAdress'>
+    <view class='name'>
+      <text>姓名</text>
+      <input placeholder='请填写收件人姓名' value='{{name}}' bindblur='getUserName'></input>
+    </view>
+  </view>
+  <view class='addAdress'>
+    <view class='phone'>
+      <text>手机号</text>
+      <input placeholder='请填写收件人手机号' value='{{phone}}' bindblur='getUserPhone'></input>
+    </view>
+  </view>
+  <view class='addAdress' bindtap="open" >
+    <view class='adress'>
+      <text>所在地</text>
+      <input disabled='false' placeholder='请选择收件人所在地区' value="{{province}} {{city}} {{county}}"   ></input>
+    </view>
+  </view>
+  <view class='add'>
+    <view class='detail'>
+      <text>详细地址</text>
+      <input  placeholder='请填写详细地址'value="{{adressDetails}}" bindinput='getUserAddr'></input>
+    </view>
+  </view>
+
+  <button class='footer'  bindtap='finish'>完成</button>
+
+  <view wx:if="{{condition}}" class="citypicker">
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+      <view class="cityheader">
+        <view bindtap="open" class="city-cancel">取消</view>
+        <view bindtap="open" class="city-true">确定</view>
+      </view>
+      <picker-view-column>
+        <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;" class='ad' data-index="{{index}}">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;" class='ad' data-index="{{index}}">{{item}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;" class='ad' data-index="{{index}}">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+

@@ -1,0 +1,47 @@
+<!-- 商品列表页 -->
+<view>
+<!-- 顶部 -->
+  <view class='header'  bindtap='onBindFocus'>
+    <!-- <input type='text' placeholder='搜索商品' readonly="" confirm-hold="false"  confirm-type="search" value='{{search}}'></input> -->
+    <view class='sousuo'>搜索商品</view>
+  </view>
+  <!-- 最左 -->
+  <view class='left'>
+    <view  wx:for="{{array}}">
+        <view  bindtap='leftClick'  class="{{activeIndex==index?'white':' '}}"  data-index="{{index}}">
+          <image src='{{item.img_url}}' class='left_logo' mode="aspectFit"></image>
+          <text>{{item.title}}</text>
+        </view>
+    </view>
+  </view>
+  <view class='right'>
+    <view wx:for="{{array}}" class="lists {{activeIndex==index?'':'none'}}" >
+        <view wx:for="{{item.res}}"  class="right_list" bindtap='rightClick' data-index="{{index}}">
+          <image wx:for-item="{{items}}" src='{{item.img_url}}' mode="aspectFit"></image>
+          <view wx:for-item="{{items}}">{{item.title}}</view>
+        </view>
+    </view>
+  </view>
+
+
+  <view class='kefu'>
+    <button open-type="contact" class='kefu'>
+      <image src='{{kefuSrc}}'></image>
+      <view>在线客服</view>
+    </button>
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

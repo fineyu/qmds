@@ -1,0 +1,112 @@
+page{
+  background-color: #f8f8f8;
+}
+.apply{
+  height: 300rpx;
+  width: 100vw;
+  background-color: #fff;
+}
+.header{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96vw;
+  background-color: #fff;
+  color: #061010;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  padding: 0 2vw;
+}
+.header text{
+  color: red;
+}
+.con{
+  width: 100vw;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #f8f8f8;
+}
+.con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:60rpx;
+  line-height:60rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  color: #061010;
+  display: block;
+}
+
+.con_top text:nth-child(2){
+  font-size: 32rpx;
+  display: block;
+  color: #999;
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  margin-top: 48rpx;
+  color: #57c340;
+}
+.all_price {
+  width: 98vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #061010;
+}
+/* 物流进度 */
+.rate{
+  margin-top: 40rpx; 
+}
+.rate_con{
+  display: inline-block;
+  background-color: #fff;
+  width: 96vw;
+  padding: 2vw;
+}
+.list{
+  width:82vw;
+  height:108rpx;
+  border-left:2rpx solid #57c340;
+  margin:auto;
+  padding:2vw 4vw;
+  position:relative;
+}
+.list text:nth-child(2){
+  display: block;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.list text:nth-child(3){
+  font-family: "微软雅黑";
+  font-size: 29rpx;
+  color: #061010;
+  display: block;
+}
+.circle{
+  width:30rpx;
+  height:30rpx;
+  background-color:#fff;
+  border:1px solid #57c340;
+  border-radius:50%;
+  z-index:101;
+  position:absolute;
+  left:-18rpx;
+  top:42rpx;
+}

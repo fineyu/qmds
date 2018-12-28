@@ -1,0 +1,65 @@
+<!-- 退款详情顶部 -->
+<view class='top'>
+  <image src='{{topsrc}}' mode="aspectFit"></image>
+  <text>{{state}}</text>
+  <text>{{final}}</text>
+</view>
+<view class='apply'>
+    <view class='header'><text>*</text>订单详情  <view class='wuliu' hidden='{{hidden}}' bindtap='logistics'>填写物流信息</view></view>
+    <view class='con'>
+        <image src='{{src}}' mode="aspectFit"></image>
+        <view class='con_top'><text>{{proName}}</text><text>{{price}}</text></view>
+        <view class='con_bottom'><text>x{{num}}</text></view>
+    </view>
+</view>
+<!-- 退款原因 -->
+<view class='detail'>
+    <view class='reason'>
+        <text>*</text>
+        {{reasontitle}}原因
+        <text>{{reason}}</text>
+    </view>
+    <view class='price'>
+        <text>*</text>
+        退款金额
+        <view>{{allprice}}</view>
+    </view>
+    <view class='price'>
+        <text>*</text>
+        退款方式
+        <view>{{backway}}</view>
+    </view>
+    <view class='price'>
+        <text>*</text>
+        退款人姓名
+        <view>{{backname}}</view>
+    </view>
+    <view class='price'>
+        <text>*</text>
+        退款人联系手机
+        <view>{{backphone}}</view>
+    </view>
+</view>
+<!-- 描述详情 -->
+<view class='xiangqing'>
+    <view class='header'><text>*</text>描述详情</view>
+    <view class='xq'>{{desc}}</view>
+</view>
+<!-- 上传凭证 -->
+<view class='xiangqing'>
+    <view class='header'><text>*</text>上传凭证</view>
+    <view class='choose_con' >
+        <image wx:for="{{imgs}}" src='{{item}}' data-src='{{src}}' mode="aspectFit" bindtap='previewImage'></image>
+    </view>
+</view>
+<!-- 物流进度 -->
+<view class='rate'>
+    <view class='header'><text>*</text>售后进度</view>
+    <view class='rate_con'>
+        <view class='list' wx:for="{{array}}">
+            <view class='circle'></view>
+            <text>{{item.add_time}}</text>
+            <text>{{item.reason}}</text>
+        </view>
+    </view>
+</view>

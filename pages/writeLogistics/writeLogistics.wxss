@@ -1,0 +1,124 @@
+page{
+  background-color: #f9f9f9;
+}
+.tit{
+  width:95vw;
+  height:60rpx;
+  background-color:#fff;
+  border-bottom:1rpx solid #f9f9f9;
+  margin:auto;
+  line-height:60rpx;
+}
+.tit1{
+  width:95vw;
+  height:75rpx;
+  background-color:#fff;
+  border-bottom:1rpx solid #f9f9f9;
+  margin:auto;
+  line-height:75rpx;
+}
+.tit text{
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  float: left;
+}
+.tit image{
+  width: 47rpx;
+  height: 45rpx;
+  float: left;
+  margin-top: 7.5rpx;
+}
+.tit1 text:nth-child(1){
+  color: #ff0000;
+   float: left;
+  padding: 0 10rpx;
+}
+.tit1 text:nth-child(2){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  float: left;
+}
+.tit1 text:nth-child(4){
+   font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #666;
+  float: right;
+}
+.tit1 image{
+  float: right;
+  width: 55rpx;
+  height: 55rpx;
+  margin-top: 10rpx;
+}
+.tit1 input{
+  height: 75rpx;
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #666;
+  text-align: right;
+  padding-right: 15rpx;
+}
+
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.pop{
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+.pop text{
+  margin: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+.pop{
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+.pop text{
+  margin: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+
+/* 测试 */
+.commodity_attr_box {
+  width: 94%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding:20rpx 3%;
+}
+
+.button{
+  width: 250rpx;
+  height: 75rpx;
+  border-radius: 40rpx;
+  background-color: #57c340;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size:30rpx;
+  margin: auto;
+  text-align: center;
+  line-height: 75rpx;
+  margin-top: 300rpx;
+}

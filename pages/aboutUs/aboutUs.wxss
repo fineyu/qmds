@@ -1,0 +1,9 @@
+/* pages/aboutUs/aboutUs.wxss */
+view{
+  text-indent:2em;
+  font-family:"微软雅黑";
+  font-size:32rpx;
+  color:#061010;
+  line-height:55rpx;
+  padding:0 2vw;
+}

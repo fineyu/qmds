@@ -1,0 +1,16 @@
+<!-- <view>
+  <view class='banner'>
+    <image src='{{src}}'></image>
+  </view> -->
+  <!-- 表单填写 -->
+  <!-- <form bindsubmit="bindFormSubmit" class='forms'>
+    <input placeholder='您的姓名'></input>
+    <input placeholder='联系地址'></input>
+    <input placeholder='联系方式'></input>
+    <input placeholder='联系邮箱'></input>
+    <button form-type="submit">提交</button>
+  </form>
+  <view class='tip'>如有任何疑问，欢迎您致电千亩大叔官方客服电话</view>
+  <view class='phone'>400-187-2008</view>
+</view> -->
+<web-view src="{{src}}"></web-view>

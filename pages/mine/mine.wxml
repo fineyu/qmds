@@ -1,0 +1,70 @@
+<view>
+<!-- 顶部 -->
+  <view class='header'>
+    <view class='header_image'  bindtap='login'><image src='{{header}}'></image></view>
+    <view class='header_name'>{{nickName}}</view>
+    <view class='header_sign'>{{sign}}</view>
+    <image src='../image/set.png' class='set' bindtap='changeNews'  mode="aspectFit"></image>
+  </view>
+  <view class='order'  bindtap='allOrders'>
+        <image src='{{order}}'></image>
+        <text>{{orderName}}</text>
+        <image class='right' src="{{right}}" mode="aspectFit"></image>
+        <text>全部订单</text>
+  </view>
+   <!-- 导航栏 -->
+  <view class='nav'>
+    
+    <view class='nav_logo' wx:for="{{array}}" bindtap='navTap' data-index="{{index}}">
+      <view class='number {{item.num==0?"none":""}}'>{{item.num}}</view>
+      <image src='{{item.src}}'></image>
+      <text>{{item.tit}}</text>
+    </view>
+  </view>
+
+
+  <view class='mine_con'>
+      <!-- 收货地址 -->
+      <view class='adress' bindtap='address'>
+        <image src='{{adress}}'mode="aspectFit"></image>
+        <text>{{add}}</text>
+        <image class='right' src="{{right}}" mode="aspectFit"></image>
+      </view>
+      <!-- 联系客服 -->
+      <view class='contact' bindtap='phone'>
+        <image src='{{uphone}}' mode="aspectFit"></image>
+        <text>{{contact}}</text>
+        <image class='right' src="{{right}}"  mode="aspectFit"></image>
+      </view>
+      <!-- 我的钱包 -->
+      <view class='wallet' bindtap='myWallet'>
+        <image src='{{wallet}}'mode="aspectFit"></image>
+        <text>{{money}}</text>
+        <image class='right' src="{{right}}" mode="aspectFit"></image>
+      </view>
+      <!-- 加盟我们 -->
+      <view class='join' bindtap='join'>
+        <image src='{{join}}' mode="aspectFit"></image>
+        <text>{{joinUs}}</text>
+        <image class='right' src="{{right}}" mode="aspectFit" ></image>
+      </view>
+      <!-- 关于我们 -->
+      <view class='idea'  bindtap='aboutUs'>
+        <image src='{{walletsrc}}' mode="aspectFit"></image>
+        <text>{{about}}</text>
+        <image class='right' src="{{right}}" ></image>
+      </view>
+  </view>
+  
+  <view class='kefu'>
+      
+      <button open-type="contact" class='kefu'>
+        <image src='{{kefuSrc}}'></image>
+        <view>在线客服</view>
+      </button>
+    </view>
+</view>
+
+
+
+

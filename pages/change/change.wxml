@@ -1,0 +1,34 @@
+<view>
+  <view class='header' bindtap='gotoShow'>
+    <text>修改头像</text> 
+    <image src='{{header}}' mode="scaleToFill"></image>
+    <!-- <image wx:if="{{imgUrl!=null}}" src="{{imgUrl}}" background-size="cover" ></image>  -->
+    <!-- <image wx:else class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image> -->
+  </view>
+  <view class='name'>
+    <text>修改姓名</text>
+    <input bindblur="nameInput" name="changename"  type='text' maxlength='11'   value='{{nickName}}'></input>
+  </view>
+  <!-- 个性签名 -->
+  <view class='sign'> 
+      <text>个性签名</text>
+      <input maxlength='15' type='text' bindblur='signInput' name="changesign"  value='{{sign}}'></input>
+  </view>
+  <!-- 修改密码 -->
+  <view class='change_password' bindtap='changePassword'>
+    <text>修改密码</text>
+    <image src='{{right}}' mode="aspectFit"></image>
+  </view>
+  <!-- 关于我们 -->
+  <view class='about_us' bindtap='about'>
+    <text>关于我们</text>
+    <image src='{{right}}'  mode="aspectFit"></image>
+  </view>
+  <!-- 小程序版本 -->
+  <view class='versions'>
+    <text>版本号</text>
+    <text>{{versions}}</text>
+  </view>
+
+  <button bindtap='save'>退出登录</button>
+</view>

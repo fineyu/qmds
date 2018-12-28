@@ -1,0 +1,67 @@
+
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}"  indicator-active-color="#fff" autoplay="{{autoplay}}" duration="{{duration}}" current="{{swiperCurrent}}"  circular>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item  bindtap="topCarouselClick" data-index="{{index}}">
+        <image src="{{item}}" class="slide-image"  mode="aspectFit" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 导航栏 -->
+  <view class='nav_con'>
+    <view class='nav' wx:for="{{classifyList}}" bindtap='classifyClick' data-index='{{index}}'>
+      <view class='nav_logo'>
+        <image src="{{item.img_url}}"></image>
+      </view>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 推荐商品 -->
+  <view class='rec_title'>
+    <image src='{{tuijian}}' mode="aspectFit"></image>
+  </view>
+
+  <swiper class='swiperClass' autoplay  duration="4000" previous-margin="80px" next-margin="80px" circular bindchange="bindchange" style='height: {{swiperHeight}}px;'>
+    <block wx:for="{{rec_goods}}" wx:key="{{index}}" >
+      <swiper-item bindtap="hotProductClick" data-index="{{index}}" >
+        <image src="{{item.img_url}}" class="slide-img {{swiperIndex == index ? 'active' : 'quiet'}}" mode='aspectFill'>
+        </image>
+        <view class='text_one'>{{item.title}}</view>
+        <view class='text_two'>{{item.desc}}</view>
+        <view class='text_three'>￥{{item.price}} <text class="hot_original_price" wx:if="{{item.original_price!=0.00&&item.original_price!=null}}">￥{{item.original_price}}</text></view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <!-- 广告栏 -->
+  <view class='advertisting'>
+    <image src='{{adSrc}}' mode="aspectFit"></image>
+  </view>
+  <!-- 商品列表 -->
+  <view class='products'>
+    <view class='pro_list' wx:for="{{goods}}" bindtap='indexProClick' data-index='{{index}}'>
+      <image src='{{item.img_url}}' mode="aspectFit"></image>
+      <text>{{item.title}}</text>
+      <view>{{item.desc}}</view>
+      <view class='price_bottom'>
+        <view class='price'>￥{{item.price}}</view>
+        <view class="original_price" wx:if="{{item.original_price!=0.00&&item.original_price!=null}}">￥{{item.original_price}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部提示 -->
+  <view class='footer'>
+    更多产品在全部里哦 ~
+  </view>
+
+  <view class='kefu'>
+    
+    <button open-type="contact" class='kefu'>
+      <image src='{{kefuSrc}}'></image>
+      <view>在线客服</view>
+    </button>
+  </view>
+</view>

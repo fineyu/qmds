@@ -1,0 +1,59 @@
+/* pages/myWallet/myWallet.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.con image{
+  width: 98vw;
+  height: 426rpx;
+  margin: auto;
+}
+.con{
+  width: 98vw;
+  height: 426rpx;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.con text:nth-child(3){
+    font-family: "Simhei";
+    font-weight: 500;
+    font-size: 80rpx;
+    display:block;
+    margin:auto;
+    margin-top:-270rpx;
+}
+.con text:nth-child(1){
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #999;
+}
+.nav{
+  width: 98vw;
+  height: 80rpx;
+  margin: auto;
+  line-height: 80rpx;
+  background-color: #fff;
+  margin-top:26rpx;
+}
+.nav image:nth-child(1){
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin: 20rpx;
+}
+.nav text{
+  font-family: "Simhei";
+  font-size: 32rpx;
+  color: #061010;
+  float: left;
+  display: block;
+}
+.nav image:nth-child(3){
+  width: 55rpx;
+  height: 60rpx;
+  float: right;
+  margin-top: 7rpx;
+}

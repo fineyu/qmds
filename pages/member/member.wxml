@@ -1,0 +1,10 @@
+<view>
+  <view class='card'><image src="{{car}}"></image></view>
+  <view class='tit'>{{title}}</view>
+  <view class="card_list {{currentTab==index?'back':''}}" wx:for="{{lis}}" bindtap='click' data-index="{{index}}">
+      <text class='list_name'>{{item.month}}</text>
+      <text class='price'>￥{{item.price}}</text>  
+  </view>
+  <view class='buy'>需支付￥{{price}}</view>
+  <view class="go">开通会员卡，即日优享更节省</view>
+</view>

@@ -1,0 +1,107 @@
+/* pages/add/add.wxss */
+.address{
+  background-color:#f8f8f8;
+  width:100vw;
+  height:100vh;
+}
+.list{
+  width: 84vw;
+  /* height: 234rpx; */
+  background-color: #fff;
+  margin:20rpx auto;
+  padding: 6rpx 3vw 0 3vw;
+}
+.list_top{
+   width: 84vw;
+   height: 140rpx;
+   border-bottom: 2rpx solid #eee;
+}
+.list_top text{
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  margin-bottom: 4rpx;
+}
+.list_top view{
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  margin-top:20rpx;
+}
+.list_bottom{
+   width: 84vw;
+   height: 80rpx;
+   line-height: 80rpx;
+}
+.radio{
+  float: left;
+  margin-top: -4rpx;
+}
+.list_bottom text{
+  font-family: '微软雅黑';
+  font-size: 28rpx;
+  color: #061010;
+  float: left;
+}
+.right{
+  height: 80rpx;
+  line-height:80rpx;
+  float: right;
+}
+.write{
+  height: 94rpx;
+  line-height:94rpx;
+  float: left;  
+  margin-right: 30rpx;
+}
+.delate{
+  float: left;
+}
+.right image{
+  display: block;
+  float: right;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+
+.right text{
+  font-family: '微软雅黑';
+  font-size: 28rpx;
+  color: #061010;
+  line-height: 80rpx;
+}
+.footer{
+  width: 100vw;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.footer button{
+  width: 70vw;
+  height: 90rpx;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  background-color: #57c340;
+  border-radius: 40rpx;
+}
+.tip{
+  font-family:'微软雅黑';
+  font-size:32rpx;
+  color:#061010;
+  width:100%;
+  text-align:center;
+  position:relative;
+  top:226rpx;
+}
+.tip image{
+  width:23vw;
+  height:23vw;
+  display:block;
+  margin:auto;
+}
+.footer_height{
+  width: 70vw;
+  height: 90rpx;
+}

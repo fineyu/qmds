@@ -1,0 +1,11 @@
+<view class='header'>
+    <input type='text' placeholder='搜索商品'  confirm-type="search" value='{{search}}' bindblur='onBindBlur' focus="true" ></input>
+</view>
+<view class='recent_search  {{recent==1?"none":""}}'> 
+    <view class='tit'>最近搜索</view> <view class='delate' bindtap='delateRecent'><image src='{{delateSrc}}'></image><text>清除记录</text></view>
+    <text wx:for="{{recentSearch}}"  bindtap='recentSearch' data-index='{{index}}'>{{item.search}}</text>
+</view>
+<view class='hot_search' > 
+    <view class='tit'>{{hot}}</view>
+    <text wx:for="{{hotSearch}}" bindtap='hotSearch' data-index='{{index}}'>{{item.title}}</text>
+</view>

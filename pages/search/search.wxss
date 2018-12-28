@@ -1,0 +1,75 @@
+.header{
+  width: 100vw;
+  height: 80rpx;
+  background-color: #57c340;
+  overflow: hidden;
+}
+.header input{
+  width: 90vw;
+  height:60rpx;
+  line-height: 60rpx;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50rpx;
+  color: #999;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.recent_search{
+  width:96vw;
+  font-family:"微软雅黑";
+  color:#061010;
+  font-size:28rpx;
+  padding:2vh 2vw;
+}
+.hot_search{
+  width:96vw;
+  font-family:"微软雅黑";
+  color:#061010;
+  font-size:28rpx;
+  padding:2vh 2vw;
+}
+.hot_search text{
+  padding:1vw 2vw;
+  border:2rpx solid #eee;
+  color:#666;
+  text-align:center;
+  margin:1vw;
+  display:inline-block;
+  border-radius:8px;
+  background-color:#eee;
+}
+.recent_search text{
+  padding:1vw 2vw;
+  border:2rpx solid #eee;
+  color:#666;
+  text-align:center;
+  margin:1vw;
+  display:inline-block;
+  border-radius:8px;
+  background-color:#eee;
+}
+.recent_search .delate{
+  float:right;
+  margin-top:-41rpx;
+}
+.delate text{
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #57c340;
+  float: right;
+  height: 40rpx; 
+  line-height: 40rpx; 
+  padding: 0;
+  margin:0;
+  border: 0;
+  background-color: #fff;
+}
+.delate image{
+  width: 36rpx;
+  height:36rpx;
+}
+.none{
+  display: none;
+}

@@ -1,0 +1,129 @@
+/* pages/comment/comment.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.con_top{
+  width: 95vw;
+  height: 280rpx;
+  background-color: #fff;
+  margin: auto;
+  overflow: hidden;
+}
+.con_top  image{
+  width: 210rpx;
+  height: 210rpx;
+  margin-top: 35rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.con_top view:nth-child(2){
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  /* display: block; */
+  float: left;
+  margin-top: 45rpx;
+  margin-left: 45rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #061010;
+  width: 55vw;
+}
+.con_top view:nth-child(3){
+  /* display: block; */
+  float: left;
+  margin-top: 17rpx;
+  margin-left: 45rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #061010;
+}
+
+.comment{
+  width: 95vw;
+  height: 270rpx;
+  margin: auto;
+  background-color: #fff;
+  /* border:2rpx solid #eee; */
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.comment input{
+  width: 92%;
+  padding: 2vw;
+  height: 219rpx;
+  margin: auto;
+  border: 2rpx solid #eee;
+  margin-top: 9rpx;
+  border-radius: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #999;
+}
+
+.choose{
+  height: 200rpx;
+  /* margin-top: 40rpx; */
+  background-color: #fff;
+  width:95vw;
+  margin:auto;
+}
+.choose_con{
+  width: 100vw;
+  height: 200rpx;
+}
+.choose_con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 12rpx;
+}
+/*评价区域  */
+.container .evaluate_contant .evaluate_item {
+  font-size: 30rpx;
+  color: gray;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+
+/*评价标题  */
+.container .evaluate_contant .evaluate_item .evaluate_title {
+  display: inline-block;
+}
+
+/*评价盒子  */
+.container .evaluate_contant .evaluate_item .evaluate_box {
+  position: absolute;
+  left: 273rpx;
+  width: 100%;
+  display: inline-block;
+  top: 160rpx;
+}
+
+/*星星评价的每个图片  */
+.container .evaluate_contant .evaluate_item .evaluate_box .star-image {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  src: "../../images/no-star.png";
+}
+
+/*星星的左边和右边区域<点击左边半个星星，点击右边整个星星>  */
+.container .evaluate_contant .evaluate_item .evaluate_box .star-image .item {
+  position: absolute;
+  top: 0rpx;
+  width: 20rpx;
+  height: 40rpx;
+}
+
+
+.upload{
+  width: 40vw;
+  height: 80rpx;
+  margin: auto;
+  background-color: #57c340;
+  text-align: center;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 20rpx;
+  margin-top: 60rpx;
+}

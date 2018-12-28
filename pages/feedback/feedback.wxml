@@ -1,0 +1,8 @@
+<view>
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请写下您的意见" name="textarea" bindblur="bindTextAreaBlur" value="{{ceshi}}"/>
+      <button form-type="submit"> 提交 </button>
+    </form>
+  </view>
+</view>

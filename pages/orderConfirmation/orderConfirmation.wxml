@@ -1,0 +1,37 @@
+<!-- 地址 -->
+<view class='adress {{current==0?"":"none"}}' bindtap='rightClick'>
+    <view class='ad_top'><text>收件人:{{name}}</text><text>{{phone}}</text></view>
+    <view class='right'  ><image src='{{rightSrc}}'></image></view>
+    <view class='ad_detail' style='width:85%'>收件地址:{{addr}}</view>
+</view>
+
+<view class='adress {{current==0?"none":""}}'  bindtap='addadress'>
+    <image src='{{dizhiSrc}}' class='dizhi'></image>
+    <view class='noadress'>请您填写收货地址</view>
+    <view class='right2'><image src='{{rightSrc}}'></image></view>
+</view>
+<!-- 商品 -->
+<view>
+      <view class='header'>
+        <image src='{{gys_img_url}}'></image>
+        <text>{{gys_name}}</text>  
+        <view class='jiage'>共{{goods_num}}件商品:共计:<text>￥{{allPrice}}</text></view>   
+      </view>
+      <view class='con'>
+          <image src='{{img_url}}'></image>
+          <view class='con_top'><text>{{goods_name}}</text><text>￥{{price}}</text></view>
+          <view class='con_bottom'><text>x{{goods_num}}</text></view>
+      </view>
+      <view class='all_price'>
+        <text>卖家留言:</text>
+        <input bindinput='liuyan' placeholder='请输入留言'></input>
+      </view>
+</view>
+
+
+<!-- 底部 -->
+<view class='footer'>
+  <view class='footer_left'>总计{{goods_num}}商品<text>(含运费￥{{yunfei}}):</text><text>￥{{allPrice}}</text></view>
+  <view class='footer_right' bindtap='goBuy'>去支付</view>
+</view>
+<!-- <view class='footer_height'></view> -->

@@ -1,0 +1,72 @@
+<!--pages/drawback/drawback.wxml-->
+<view class='apply'>
+    <view class='header'><text>*</text>订单详情</view>
+    <view class='con'>
+        <image src='{{src}}' mode="aspectFit"></image>
+        <view class='con_top'><text>{{proName}}</text><text>{{price}}</text></view>
+        <view class='con_bottom'><text>x{{num}}</text></view>
+    </view>
+</view>
+<!-- 退款原因 -->
+<view class='detail'>
+    <view class='reason' bindtap='chooseReason'>
+        <text>*</text>
+        退款退货原因
+        <view>{{reason}}</view>
+    </view>
+    <view class='price'>
+        <text>*</text>
+        退款金额
+        <view>{{allprice}}</view>
+    </view>
+    <view class='way'>
+        <text>*</text>
+        退款方式
+        <view>退回钱包</view>
+    </view>
+    <view class='name'>
+        <text>*</text>
+        退款人姓名
+        <input bindinput='getName'  value='{{name}}'></input>
+    </view>
+    <view class='phone'>
+        <text>*</text>
+        退款人手机号
+        <input bindinput='getPhone' value='{{phone}}'></input>
+    </view>
+</view>
+<!-- 上传凭证 -->
+<view class='choose'>
+    <view class='header'><text>*</text>上传凭证</view>
+    <view class='choose_con' >
+        <image src='{{chooseSrc}}' bindtap='choosePicture' mode="aspectFit"></image>
+        <image wx:for="{{imgs}}" src='{{item}}' mode="aspectFit"></image>
+    </view>
+</view>
+<!-- 描述详情 -->
+<view class='choose'>
+    <view class='header'><text>*</text>描述详情</view>
+    <input value='{{comment}}' bindinput='getComment'></input>
+</view>
+<!-- 提交 -->
+<view class='submit' bindtap='submit'>
+
+
+  <button>提交</button>
+</view>
+<view class='footer_height'></view>
+
+<!-- 退款原因选择 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view> 
+
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">  
+   <picker-view indicator-style="height: 50px;" style="width: 100%; height: 250px; text-align:center" value="{{value}}" bindchange="bindChange" >
+    <view class='pop'>
+      <text style='float:left' bindtap="cancelClick">取消</text>
+      <text style='float:right;color:#57c340' bindtap="confirmClick">确定</text>
+    </view>
+    <picker-view-column style="text-align:center">
+      <view wx:for="{{reasons}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

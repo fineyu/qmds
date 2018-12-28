@@ -1,0 +1,118 @@
+/* pages/applyAfter/applyAfter.wxss */
+page{
+  background-color: #f8f8f8;
+}
+.apply{
+  height: 300rpx;
+  width: 100vw;
+  background-color: #fff;
+}
+.header{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96vw;
+  background-color: #fff;
+  color: #061010;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  padding: 0 2vw;
+}
+.header text{
+  color: red;
+}
+.con{
+  width: 100vw;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #f8f8f8;
+}
+.con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(1){
+  display: block;
+  float:left;
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  line-height:60rpx;
+  width:49vw;
+  height:63px;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(2){
+  float:right;
+  display:block;
+  height:100rpx;
+  width:21vw;
+  line-height:60rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  float: right;
+}
+.all_price {
+  width: 98vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size:28rpx;
+  color: #061010;
+  text-align: right;
+  padding-right: 2vw;
+}
+.choose{
+  margin-top:40rpx;
+}
+.list{
+  width: 100vw;
+  height: 100rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.list .tit{
+  width: 44rpx;
+  height: 44rpx;
+  margin: 28rpx 2vw;
+  float: left;
+}
+.list text{
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.go{
+  width:54rpx;
+  height:50rpx;
+  float:right;
+  margin-top:25rpx;
+}

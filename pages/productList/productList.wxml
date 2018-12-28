@@ -1,0 +1,16 @@
+<!-- 商品列表 -->
+  <view class='products'>
+      <view class='no_pro' hidden='{{hidden}}'>
+        <image src='{{qmSrc}}'  mode="aspectFit"></image>
+        <text>暂无相关产品哦</text>
+      </view>
+    <view class='pro_list' wx:for="{{goods}}" bindtap='indexProClick' data-index='{{index}}'>
+        <image src='{{item.img_url}}'></image>
+        <text>{{item.title}}</text>
+        <view class='info'>{{item.desc}}</view>
+        <view class='price_bottom'>
+            <view class='price'>￥{{item.price}}</view>
+            <view class="original_price"   wx:if="{{item.original_price!=0.00&&item.original_price!=null}}">￥{{item.original_price}}</view>
+        </view>
+    </view>
+  </view>

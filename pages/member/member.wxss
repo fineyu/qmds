@@ -1,0 +1,59 @@
+.card {
+  width: 80vw;
+  height: 400rpx;
+  margin: auto;
+}
+.card image{
+  width: 80vw;
+  height: 400rpx;
+}
+.tit{
+  margin-left: 20rpx;
+  font-family:"微软雅黑";
+  font-size:40rpx;
+  color: #061010;
+}
+.card_list{
+  width: 90vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: 2rpx solid #ddd;
+  background-color: #f8f8f8;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+}
+.list_name{
+  float: left;
+  margin-left: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  color: #061010;
+}
+.price{
+  float: right;
+  margin-right: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  color: #57c340;
+}
+.back{
+  background-color:#fff!important; 
+  border:1px solid #57c340!important;
+}
+.buy{
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  color: #061010;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.go{
+  width: 90vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: gold;
+  box-shadow: 2rpx 2rpx 10rpx goldenrod;
+  margin: 120rpx auto;
+  text-align: center;
+  border-radius: 40rpx;
+}

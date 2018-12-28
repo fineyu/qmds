@@ -1,0 +1,40 @@
+<!--pages/add/add.wxml-->
+<view class='address' >
+  <view class='list'   wx:if="{{show}}" wx:for="{{array}}"  >
+    <view class='list_top' bindtap='addressClick' data-index="{{index}}">
+      <text >{{item.name}}</text> <text style='float:right;display:block;margin-top:8rpx;'>{{item.phone}}</text>
+      <view >{{item.addr_name}}</view>
+    </view>
+    <view class='list_bottom' >
+      <view class='left' >
+          <radio-group class="radio-group" bindtap="radioChange" id="{{index}}" >
+            <label class="radio"> 
+              <radio checked="{{item.checked}}" />
+            </label> 
+          </radio-group>
+          <text>默认地址</text>
+      </view>
+      <view class='right'>
+        <view class='write' bindtap='redact' data-index="{{index}}">
+            <image src='{{oneSrc}}' class='bianji' mode="aspectFit"></image>
+            <text>编辑</text>
+        </view>
+        <view class='delate' bindtap='delate' data-index="{{index}}">
+            <image src='{{twoSrc}}' mode="aspectFit"></image>
+            <text>删除</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='tip' wx:if="{{tip}}">
+    <image src='{{qmSrc}}'  mode="aspectFit"></image>
+    <text>暂无数据哦~</text>
+  </view>
+
+  <!-- 底部按钮添加新地址 -->
+  <view class='footer'>
+    <button  bindtap='addNewAdress'>添加新地址</button>
+  </view>
+  <view class='footer_height'></view>
+</view>

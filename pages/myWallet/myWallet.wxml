@@ -1,0 +1,11 @@
+<view class='con'>
+    <text>我的钱包(元)</text>
+    <image src='{{src}}' mode="aspectFit"></image>
+    <text>￥{{price}}</text>
+</view>
+
+<view  class='nav' bindtap='tixian'>
+    <image  src='{{leftSrc}}'></image>
+    <text>提现</text>
+    <image src='{{rightSrc}}' ></image>
+</view>

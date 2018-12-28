@@ -1,0 +1,22 @@
+.section{
+  width: 100vw;
+  height: 400rpx;
+}
+textarea{
+  width: 90vw;
+  height: 400rpx;
+  margin: auto;
+  border: 2rpx solid #57c340;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  color: #061010;
+  border-radius: 30rpx;
+  padding: 6rpx 1vw;
+  margin-top: 40rpx;
+}
+button{
+  width: 40vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
+}

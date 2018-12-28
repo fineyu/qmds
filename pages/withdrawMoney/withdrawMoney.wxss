@@ -1,0 +1,101 @@
+page{
+  background-color: #f8f8f8;
+}
+.bgc{
+  background-color: #fff;
+}
+.withdraw_way{
+  height:80rpx;
+  width:100vw;
+  /* background-color:#ddd; */
+  background-color: #f8f8f8;
+  line-height:80rpx;
+}
+.withdraw_way image{
+  width:50rpx;
+  height:50rpx;
+  margin:15rpx;
+  float:left;
+}
+.withdraw_way text{
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+.zfb{
+  width:303rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  /* border:1rpx solid #049de9; */
+  border: 1rpx solid #59a871;
+  border-radius:15rpx;
+  margin:30rpx auto;
+}
+.zfb image{
+  width:50rpx;
+  height:50rpx; 
+  float: left;
+  margin: 15rpx;
+}
+.zfb text{
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #049de9;
+  margin-left: 75rpx;
+}
+.bgc input{
+  width:90vw;
+  height:77rpx;
+  margin:22rpx auto;
+  border:1rpx solid #cecece;
+  font-family:"微软雅黑";
+  color:#999;
+  font-size:28rpx;
+  padding-left:10px;
+  border-radius:15rpx;
+}
+.write_price{
+  height: 120rpx;
+  color:#999;
+  font-size:28rpx;
+  padding-left:10px;
+  position: relative;
+}
+.write_price input{
+  width:90vw;
+  height:77rpx;
+  margin:22rpx auto;
+  border:1rpx solid #cecece;
+  font-family:"微软雅黑";
+  color:#999;
+  font-size:28rpx;
+  padding-left:10px;
+  border-radius:15rpx;
+}
+.write_price text{
+  position:absolute;
+  right:42rpx;
+  top:18rpx;
+}
+.apply{
+  width:80vw;
+  height:90rpx;
+  line-height:90rpx;
+  border-radius:50rpx;
+  background-color:#57c340;
+  color:#fff;
+  font-family:"微软雅黑";
+  font-size:30rpx;
+  text-align:center;
+  margin:auto;
+  margin-top:210rpx;
+}
+.tips{
+  width: 95vw;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 24rpx;
+  color: #cecece;
+  margin:25rpx auto;
+}

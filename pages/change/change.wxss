@@ -1,0 +1,154 @@
+page{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.header{
+  width: 100vw;
+  height: 160rpx;
+  line-height: 160rpx;
+  border-bottom: 2rpx solid #eee;
+  background-color: #fff;
+}
+.header text{
+  padding-left: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  float: left;
+}
+.header image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  float: right;
+  margin-top:10rpx;
+  margin-right: 20rpx;
+}
+.name{
+  width: 100vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eee;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  background-color: #fff;
+}
+.name text{
+  padding-left: 20rpx;
+  float: left;
+}
+.name input{
+  height: 90rpx;
+  line-height: 90rpx;
+  float: right;
+  /* margin-top: 5px; */
+  margin-right: 20rpx;
+  text-align: right;
+  font-size: 28rpx;
+  color: #999;
+}
+/* 个性签名 */
+.sign{
+  width: 100vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eee;
+  font-family: "微软雅黑";
+  font-size:30rpx;
+  color: #061010;
+  background-color: #fff;
+}
+.sign text{
+  padding-left: 20rpx;
+  float: left;
+}
+.sign input{
+  height:90rpx;
+  line-height:90rpx;
+  float:right;
+  margin-right: 20rpx;
+  text-align:right;
+  font-size: 28rpx;
+  color: #999;
+}
+.sign image{
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+}
+/* 修改密码 */
+.change_password{
+  width: 100vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #eee;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  background-color: #fff;
+  margin-top: 60rpx;
+}
+.change_password text{
+  padding-left: 20rpx;
+  float: left;
+}
+.change_password image{
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+  margin-top: 18rpx;
+}
+/* 关于我们 */
+.about_us{
+  width: 100vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size:30rpx;
+  color: #061010;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+}
+.about_us text{
+  padding-left: 20rpx;
+  float: left;
+}
+.about_us image{
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+  margin-top: 18rpx;
+}
+/* 保存 */
+button{
+  margin:auto;
+  margin-top:96rpx;
+  width:30vw;
+  height:100rpx;
+  background-color: #57c340;
+  line-height: 100rpx;
+  color: #fff;
+}
+/* 版本 */
+.versions{
+  width: 100vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  background-color: #fff;
+}
+.versions text:nth-child(1){
+  padding-left: 20rpx;
+  float: left;
+}
+.versions text:nth-child(2){
+  padding-left: 20rpx;
+  float: right;
+  font-size: 28rpx;
+  color: #999;
+  margin-right: 20rpx;
+}

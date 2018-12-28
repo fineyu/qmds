@@ -1,0 +1,13 @@
+
+
+<!-- 物流进度 -->
+<view class='rate'>
+    <view class='header'><text>*</text>物流进度</view>
+    <view class='rate_con'>
+        <view class='list' wx:for="{{array}}">
+            <view class='circle'></view>
+            <text>{{item.datetime}}</text>
+            <text>{{item.remark}}</text>
+        </view>
+    </view>
+</view>

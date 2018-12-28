@@ -1,0 +1,15 @@
+<!-- 注册 -->
+<view class='changeInfo'>
+  <image src='{{src}}' class='header'></image>
+  <view class='changeInfoName' style='margin-top:80rpx'>
+    <image src='{{dianhua}}' class='phone' mode="aspectFit"></image>
+    <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}'/> 
+  </view>
+  <view class='changeInfoName'>
+    <image src='{{yanzhengma}}' class='phone' mode="aspectFit"></image>
+    <input placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' style='width:70%;'/> 
+    <button class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}' >{{codename}}</button>
+  </view>
+
+  <view class='changeBtn  {{active==index?"green":""}}' bindtap='submit'>完成</view>
+</view>

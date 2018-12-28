@@ -1,0 +1,181 @@
+/* pages/newAdress/newAdress.wxss */
+.all{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.name{
+  width: 90vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.name text{
+  width: 20vw;
+  height:90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  float: left;
+  text-align: center;
+}
+.name input{
+  width: 70vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.phone{
+  width: 90vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.phone text{
+  width: 20vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  float: left;
+  text-align: center;
+}
+.phone input{
+  width: 70vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.adress{
+  width: 90vw;
+  height: 90rpx;
+  line-height:90rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #eee;
+  margin: auto;
+}
+.adress text{
+  width: 20vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  float: left;
+  text-align: center;
+}
+.adress input{
+  width: 70vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.detail{
+  width: 90vw;
+  height: 200rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  margin: auto;
+
+}
+.detail text{
+  width: 20vw;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #061010;
+  padding-left:3vw;
+  text-align: center;
+}
+.detail input{
+  width: 70vw;
+  height: 90rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+  padding-left: 4vw;
+}
+
+
+.section {
+  padding-top: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 400rpx;
+}
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citybody {
+  position: fixed;
+  bottom: 0px;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 2rpx #d9d9d9 solid;
+  border-top: 2rpx #d9d9d9 solid;
+  padding: 20rpx;
+}
+picker-view-column .ad{
+  text-align: center !important;
+}
+.footer{
+  width: 70vw;
+  background-color: #57c340;
+  color: #fff;
+  text-align: center;
+  font-family: '微软雅黑';
+  font-size: 32rpx;
+  border-radius: 40rpx;
+  margin-top: 40rpx;
+}

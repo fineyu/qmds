@@ -1,0 +1,88 @@
+/* pages/productList/productList.wxss *//* 商品 */
+page{
+  background-color: #f8f8f8;
+}
+.products{
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+.pro_list{
+  width: 48vw;
+  float: left;
+  height: 540rpx;
+  background-color: #fff;
+  margin: 7rpx 1vw;
+  position: relative;
+}
+.pro_list image{
+  width: 46vw;
+  height: 340rpx;
+}
+.pro_list text{
+  width: 46vw;
+   /* height: 74rpx;  */
+  font-family: "Simhei";
+  font-size: 30rpx;
+  color: #061010; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+  padding:0.8vw 1vw;
+}
+.pro_list .price{
+  font-family: "Simhei";
+  font-size: 32rpx;
+  color: #fc5a2a;
+  float: left;
+}
+.pro_list view:nth-child(3){
+  width: 44vw;
+  font-family: "微软雅黑";
+  font-size:24rpx;
+  color: #999; 
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  position: absolute;
+  bottom: 55rpx;
+  padding-left: 1vw;
+}
+.footer{
+  width: 100vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "Simhei";
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.original_price{
+  font-family: "Simhei";
+  font-size:32rpx;
+  color: #061010;
+  text-decoration:line-through;
+  float: left;
+  margin-left:10rpx;
+}
+.price_bottom{
+  position: absolute;
+  bottom: 6rpx;
+}
+.no_pro{
+  font-family:'微软雅黑';
+  font-size:32rpx;
+  color:#061010;
+  width:100%;
+  text-align:center;
+  position:relative;
+  top:226rpx;
+}
+.no_pro image{
+  width:23vw;
+  height:23vw;
+  display:block;
+  margin:auto;
+}

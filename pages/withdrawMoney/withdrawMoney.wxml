@@ -1,0 +1,26 @@
+<!-- 提取现金 -->
+<view class='bgc'>
+  <view class='withdraw_way'>
+      <image src='{{waySrc}}'></image>
+      <text>提现方式</text>
+  </view>
+  <view class='zfb'>
+      <image src='{{zfbSrc}}'></image>
+      <text>支付宝</text>
+  </view>
+  <input placeholder='请输入账号真实姓名'  bindinput='name' value='{{name}}'></input>
+  <input placeholder='请输入支付宝账号' bindinput='account' value='{{account}}'></input>  
+  <view class='withdraw_way'>
+      <image src='{{priceSrc}}'></image>
+      <text>提现金额</text>
+  </view>
+  <view class='write_price'>
+      <text>元</text>
+      <input placeholder='请输入提现金额' bindinput='money' value='{{money}}'></input>
+  </view>
+</view>
+
+<view class='apply' bindtap='applyMoney'>申请提现</view>
+<view class='tips'>
+  用户务必填写真实有效个人身份信息，若隐瞒、虚假、造成的一切后果均由账号用户承担,平台会依法追究责任!第一时间冻结其账号！
+</view>

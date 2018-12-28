@@ -1,0 +1,262 @@
+/* pages/allOrder/allOrder.wxss */
+page{
+ 
+  background-color: #f8f8f8;
+}
+.nav_height{
+  width: 100vw;
+  height: 100rpx;
+}
+.nav{
+  width: 100vw;
+  height: 85rpx;
+  background-color: #fff;
+  position:fixed;
+  top:0;
+  z-index:10001;
+
+}
+.nav view{
+  float: left;
+  width: 16.6vw;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.tabBorer{
+  border-bottom: 2rpx solid #57c340;
+  color: #57c340 !important;
+}
+.swiper_con{
+  width: 100vw;
+  display: inline-block;
+  
+}
+.header{
+  width: 94vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 3vw;
+  margin-top: 6rpx;
+}
+.header image{
+  width: 50rpx;
+  height:50rpx;
+  position:relative;
+  top:5rpx;
+  float: left;
+}
+.header text:nth-child(2){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  float: left;
+  color: #061010;
+  margin-left: 10rpx;
+}
+.header text:nth-child(3){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  float: right;
+  /* text-align: right; */
+   color: #57c340 !important;
+}
+.con{
+  width: 100vw;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #f8f8f8;
+}
+.w_pay{
+  width: 100vw;
+  background-color: #fff;
+  margin: 20rpx 0;
+  /* display: inline-block; */
+}
+.con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:100rpx;
+  /* line-height:100rpx; */
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 24rpx;
+  color: #061010;
+}
+.con_top text:nth-child(1){
+  float:left;
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  line-height:60rpx;
+  width:49vw;
+  height:63px;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(2){
+  float:right;
+  display:block;
+  height:100rpx;
+  line-height:60rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+ 
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  float: right;
+}
+.all_price {
+  width: 98vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+  padding-right: 2vw;
+}
+.all_price text:nth-child(1){
+  font-size: 26rpx !important;
+  color:#999 !important;
+}
+.all_price text:nth-child(2){
+  font-size: 26rpx !important;
+  color:#f74535 !important;
+}
+/* 待付款 */
+.pay_footer{
+  width: 100vw;
+  height:70rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+}
+.pay_footer text{
+  display: block;
+  width: 160rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  float: right;
+  margin: 12.5rpx 3vw 0 0;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+  border: 1px solid #999;
+}
+.hidden{
+  display: none;
+}
+.gray{
+  color: #999;
+  border: 1px solid #999;
+}
+.green{
+  color: #57c340 !important;
+  border: 1px solid #57c340 !important;
+}
+/* .pay_footer text:nth-child(1){
+  color: #999;
+  border: 1px solid #999;
+}
+.pay_footer text:nth-child(2){
+  color: #57c340;
+  border: 1px solid #57c340;
+} */
+/* 待发货 */
+.deliver_footer{
+  width: 100vw;
+  height: 80rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+}
+.deliver_footer  text{
+ display: block;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  float: right;
+  margin: 14rpx 3vw 0 0;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  border: 2rpx solid #57c340;
+  color: #57c340;
+}
+
+/* 待评价 */
+.comment_footer{
+  width: 100vw;
+  height:80rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+}
+.comment_footer text{
+  display: block;
+  width: 160rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  float: right;
+  margin: 14rpx 3vw 0 0;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+}
+.comment_footer text:nth-child(1){
+  color: #999;
+  border: 2rpx solid #999;
+}
+.comment_footer text:nth-child(2){
+  color: #999;
+  border: 2rpx solid #999;
+}
+.comment_footer text:nth-child(3){
+  color: #57c340;
+  border: 2rpx solid #57c340;
+}
+.all_price text:nth-child(2){
+  color: #f74535 !important;
+}
+.all_price text:nth-child(1){
+  font-size: 26rpx;
+  color: #666 !important;
+}
+.swiper .swiper_item{
+    position:absolute;
+    width:100%;
+    display: block;
+    overflow: auto;
+    will-change:transform;
+
+}
+.nonews{
+  text-align: center;
+  margin: 10vh 0;
+}
+.nonews image{
+  width: 40vw;
+  height: 40vw;
+}
+.none{
+  display: none;
+}

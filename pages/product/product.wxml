@@ -1,0 +1,32 @@
+<!-- 商品列表 -->
+<view>
+    <view class='header'>
+      <input type='text' placeholder='搜索商品'  confirm-type="search" value='{{search}}' bindblur='onBindBlur' bindfocus='onBindFocus'></input>
+    </view>
+    <view class='nav'>
+      <view  class="sort {{current=='0'?'green':''}}"   bindtap='sortClick'  id = "0">{{sort}} <image src='{{sortSrc}}'  mode="aspectFit"></image> </view>
+      <view  class="precedence {{current=='1'?'green':''}}"  bindtap='precedenceClick' id = "1">销量优先</view>
+    </view>
+    <view class='pop' wx:if="{{isshow}}">
+        <view   class="list {{currentId == '0'?'green':''}}" id='0'  bindtap='timeClick'>{{time}}</view>
+        <view   class="list {{currentId == '1'?'green':''}}" id='1'  bindtap='highClick'>{{high}}</view>
+        <view   class="list {{currentId == '2'?'green':''}}" id='2'  bindtap='lowClick'>{{low}}</view>
+    </view>
+    <!-- 商品内容 -->
+    <view class='products'>
+       <view class='no_pro' hidden='{{hidden}}'>
+        <image src='{{qmSrc}}'  mode="aspectFit"></image>
+        <text>暂无相关产品哦</text>
+      </view>
+      <view class='pro_list' wx:for="{{array}}" bindtap='productClick' data-index='{{index}}'>
+          <image src='{{item.img_url}}' mode="aspectFit"></image>
+          <text>{{item.title}}</text>
+          <view>{{item.desc}}</view>
+          <view class='price_bottom'>
+            <view class='price'>￥{{item.price}}</view>
+            <view class="original_price"   wx:if="{{item.original_price!=0.00&&item.original_price!=null}}">￥{{item.original_price}}</view>
+          </view>
+      </view>
+   </view>
+  
+</view>

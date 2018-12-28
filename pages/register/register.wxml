@@ -1,0 +1,21 @@
+<!-- 注册 -->
+<view class='changeInfo'>
+  <image class='bg1' src='{{bg1Src}}'></image>
+  <image class='bg2' src='{{bg2Src}}'></image>
+  <image class='bg3' src='{{bg3Src}}'></image>
+  <image src='{{src}}' class='header'></image>
+  <view class='changeInfoName' style='margin-top:80rpx'>
+    <image  src='{{dianhua}}'  class='tubiao' mode="aspectFit"></image>
+    <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' maxlength='11'/> 
+  </view>
+  <view class='changeInfoName'>
+    <image  src='{{mima}}' class='tubiao' mode="aspectFit"></image>
+    <input placeholder='请输入您的密码' bindinput='getPasswordValue' value='{{password}}'/> 
+  </view>
+  <view class='changeInfoName'>
+    <image  src='{{yanzhengma}}' class='tubiao'  mode="aspectFit"></image>
+    <input placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' style='width:70%;'  maxlength='4'/> 
+    <button class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}' >{{codename}}</button>
+  </view>
+  <view class='changeBtn' bindtap='register'>注册</view>
+</view>

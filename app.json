@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/classify/classify",
+    "pages/mine/mine",
+    "pages/member/member",
+    "pages/feedback/feedback",
+    "pages/change/change",
+    "pages/order/order",
+    "pages/login/login",
+    "pages/product/product",
+    "pages/join/join",
+    "pages/add/add",
+    "pages/newAdress/newAdress",
+    "pages/allOrder/allOrder",
+    "pages/applyAfter/applyAfter",
+    "pages/drawback/drawback",
+    "pages/goodsback/goodsback",
+    "pages/logistics/logistics",
+    "pages/returnDetails/returnDetails",
+    "pages/register/register",
+    "pages/aboutUs/aboutUs",
+    "pages/changePassword/changePassword",
+    "pages/search/search",
+    "pages/orderDetails/orderDetails",
+    "pages/forgetPassword/forgetPassword",
+    "pages/comment/comment",
+    "pages/myWallet/myWallet",
+    "pages/productList/productList",
+    "pages/orderConfirmation/orderConfirmation",
+    "pages/bindPhone/bindphone",
+    "pages/withdrawMoney/withdrawMoney",
+    "pages/writeLogistics/writeLogistics"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "千亩大叔",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#57c340",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/index.png",
+        "selectedIconPath": "pages/image/index1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "pages/image/fenleishousuo.png",
+        "selectedIconPath": "pages/image/fenleishousuo1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/mine.png",
+        "selectedIconPath": "pages/image/mine(1).png"
+      }
+    ]
+  }
+}

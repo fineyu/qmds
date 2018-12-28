@@ -1,0 +1,259 @@
+page{
+  background-color: #f8f8f8;
+}
+.apply{
+  height: 300rpx;
+  width: 100vw;
+  background-color: #fff;
+}
+.header{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96vw;
+  background-color: #fff;
+  color: #061010;
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+  padding: 0 2vw;
+}
+.header text{
+  color: red;
+}
+.con{
+  width: 100vw;
+  height: 200rpx;
+  line-height: 200rpx;
+  background-color: #f8f8f8;
+}
+.con image{
+  width:160rpx;
+  height:160rpx;
+  margin:20rpx;
+  float: left;
+}
+.con_top{
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(1){
+  display: block;
+  float:left;
+  display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+  line-height:60rpx;
+  width:49vw;
+  height:63px;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+}
+.con_top text:nth-child(2){
+  float:right;
+  display:block;
+  height:100rpx;
+  width:21vw;
+  line-height:60rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+ 
+}
+.con_bottom {
+  float: left;
+  height:100rpx;
+  line-height:100rpx;
+  width:70vw;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.con_bottom text{
+  display: block;
+  float: right;
+}
+.all_price {
+  width: 98vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  text-align: right;
+  padding-right: 2vw;
+}
+.detail{
+  margin-top: 40rpx;
+}
+.detail view{
+  border-bottom: 2rpx solid #eee;
+}
+.detail view:last-child{
+  border-bottom:0;
+}
+.reason{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: #061010;
+  padding: 0 2vw;
+  border-bottom: 2rpx solid #eee;
+}
+.reason text:nth-child(1){
+  color: red;
+}
+.reason text:nth-child(2){
+  float: right;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: #999;
+}
+.price{
+  width: 96vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  font-family:'微软雅黑';
+  font-size: 28rpx;
+  color: "#061010";
+  padding: 0 2vw;
+  border-bottom: 2rpx solid #eee;
+}
+.price text:nth-child(1){
+  color: red;
+}
+.price view{
+  float: right;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.top{
+  width: 98%;
+  height: 220rpx;
+  margin:auto;
+}
+.top image{
+  width: 100%;
+  height: 220rpx;
+  margin:auto;
+}
+.top text:nth-child(2){
+  position:absolute;
+  top:52rpx;
+  display:block;
+  left:90rpx;
+  font-family:"微软雅黑";
+  font-size:38rpx;
+  color:#fff;
+}
+.top text:nth-child(3){
+  position:absolute;
+  top:112rpx;
+  display:block;
+  left:90rpx;
+  font-family:"微软雅黑";
+  font-size:30rpx;
+  color:#fff;
+}
+/* 物流进度 */
+.rate{
+  margin: 40rpx  0 120rpx 0;
+}
+.rate_con{
+  display: inline-block;
+  background-color: #fff;
+  width: 96vw;
+  padding: 2vw;
+}
+.list{
+  width:82vw;
+  height:100rpx;
+  border-left:2rpx solid #57c340;
+  margin:auto;
+  padding:2vw 4vw;
+  position:relative;
+}
+.list text:nth-child(2){
+  display: block;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.list text:nth-child(3){
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #061010;
+  display: block;
+  margin-top:18rpx;
+}
+.circle{
+  width:30rpx;
+  height:30rpx;
+  background-color:#fff;
+  border:2rpx solid #57c340;
+  border-radius:50%;
+  z-index:101;
+  position:absolute;
+  left:-18rpx;
+  top:42rpx
+}
+/* 描述详情 */
+.xiangqing{
+  height: 280rpx;
+  margin-top: 40rpx;
+  background-color: #fff;
+}
+.header{
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 96vw;
+  background-color: #fff;
+  color: #061010;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  padding: 0 2vw;
+}
+.header text{
+  color: red;
+}
+.xq{
+  width: 91%;
+  height: 200rpx;
+  border: 1rpx solid #eee;
+  margin: auto;
+  border-radius: 20rpx;
+  padding: 0 2%;
+  font-family: "微软雅黑";
+  font-size: 28rpx;
+  color: #999;
+}
+.choose_con{
+  height:200rpx;
+  width: 100vw;
+}
+.choose_con image{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 12rpx;
+}
+.wuliu{
+  width:177rpx;
+  height:45rpx;
+  border-radius:20rpx;
+  font-family:"微软雅黑";
+  font-size:24rpx;
+  color:#fff;
+  background-color:#999;
+  float:right;
+  line-height:45rpx;
+  text-align:center;
+  margin-top:15rpx;
+}

@@ -1,0 +1,29 @@
+  <view class='changeInfo'>
+  <image class='bg1' src='{{bg1Src}}'></image>
+  <image class='bg2' src='{{bg2Src}}'></image>
+  <image class='bg3' src='{{bg3Src}}'></image>
+
+  <image src='{{src}}' class='header'></image>
+
+  <view class='changeInfoName' style='margin-top:6rpx'>
+      <image src='{{dianhua}}' class='phone' mode="aspectFit"></image>
+      <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}'  maxlength='11'/> 
+  </view>
+
+  <view class='changeInfoName'>
+    <image src='{{mima}}' class='phone' mode="aspectFit"></image>
+    <input placeholder='请输入密码' bindinput='getPasswordValue' value='{{password}}'/> 
+  </view>
+  <view class='forget_pwd' bindtap='forgetPwd'>忘记密码?</view>
+  <view  bindtap='register' class='register'><view>————</view>暂无账号，请先注册<view>————</view></view>
+
+  <view class='changeBtn ' data-index='{{index}}' bindtap='login'>登录</view>
+    <!-- <view class='weixin_login' style='text-align:center;margin-top:50rpx' wx:if="{{canIUse}}" >
+      <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" style='border:none;outline:none' bindgetuserinfo="bindGetUserInfo">
+        ————使用社交账号登录————</button>
+
+      <image src='{{weixin}}'></image>
+    </view>
+    <view wx:else>请升级微信版本</view> -->
+
+</view>

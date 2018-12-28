@@ -1,0 +1,55 @@
+<!-- 订单详情 -->
+<view class='top'>
+  <image src="{{topSrc}}" mode="aspectFit"></image>
+  <text>{{hint}}</text>
+  <text>{{status_name}}</text>
+</view>
+<!-- 地址 -->
+<view class='adress'>
+    <view class='ad_top'><text>收件人:{{name}}</text><text>{{phone}}</text></view>
+    <view class='ad_detail'>收件地址:{{addr}}</view>
+</view>
+<!-- 商品 -->
+<view>
+      <view class='header'><image src='{{gys_img_url}}'></image><text>{{gys_name}}</text><text bindtap='shopPhoneClick'>{{wpay}}</text></view>
+      <view class='con'>
+          <image src='{{img_url}}'></image>
+          <view class='con_top'><text>{{goods_name}}</text><text>￥{{price}}</text></view>
+          <view class='con_bottom'><text>x{{goods_num}}</text></view>
+      </view>
+      <view class='all_price'>
+        <text class='after' bindtap='clickAfterSale' data-index='{{index}}'  wx:if="{{status==2||status==3}}" >申请售后</text>
+        <text class='pay_money'>实际付款：￥{{money}}</text>
+      </view>
+</view>
+<!-- 订单编号 -->
+<view class='order_detail'>
+    <view class='list'>
+        <text>运费</text>
+        <text>￥{{yunfei}}</text>
+    </view>
+    <view class='list'>
+        <text>订单编号</text>
+        <text>{{order_code}}</text>
+    </view>
+    <view class='list'>
+        <text>下单时间</text>
+        <text>{{add_time}}</text>
+    </view>
+    <view class='list'>
+        <text>支付方式</text>
+        <text>{{orderBuy}}</text>
+    </view>
+</view>
+<!-- 底部 -->
+<view class='footer'>
+    <text  wx:if="{{status==4||status==3}}" bindtap='seelogister' class='gray' >查看物流</text>
+    <text  wx:if="{{status==4}}" class='green' bindtap='comment'>评价</text>
+    <text  wx:if="{{status==3}}" class='green'  bindtap='clickConfirm' data-index='{{index}}'>确认收货</text>
+    <text  wx:if="{{status==2}}" class='green'  bindtap='clickRemind' data-index='{{index}}'>提醒发货</text>
+    <text  wx:if="{{status==1}}" bindtap='clickCancel' data-index='{{index}}' class='gray'>取消</text>
+    <text  wx:if="{{status==1}}" class='green'  bindtap='clickPay' data-index='{{index}}'>付款</text>
+    <text  wx:if="{{status==6}}"  bindtap='clickDelate' data-index='{{index}}'  class='gray'>删除订单</text>
+    <text  wx:if="{{status==7}}" bindtap='shouhouClick' data-index='{{index}}'  class='green'>售后详情</text>
+
+</view>

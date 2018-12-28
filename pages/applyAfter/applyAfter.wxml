@@ -1,0 +1,18 @@
+<!--pages/applyAfter/applyAfter.wxml-->
+<view class='apply'>
+    <view class='header'><text>*</text>订单详情</view>
+    <view class='con'>
+        <image src='{{src}}'  mode="aspectFit"></image>
+        <view class='con_top'><text>{{proName}}</text><text>{{price}}</text></view>
+        <view class='con_bottom'><text>x{{num}}</text></view>
+    </view>
+</view>
+<!-- 选择服务类型 -->
+<view class='choose'>
+  <view class='header'><text>*</text>选择服务类型</view>
+  <view class='choose_con'>
+      <view class='list'  bindtap='clickTk'><image class='tit'  src='{{oneSrc}}'></image><text>退款</text><image class='go' mode="aspectFit"  src='{{right}}'></image></view>
+      <view class='list'  bindtap='clickTkth'><image class='tit'  src='{{twoSrc}}'></image><text>退款退货</text><image class='go' mode="aspectFit"  src='{{right}}'></image></view>
+      <view class='list'  bindtap='phone'><image class='tit'  src='{{threeSrc}}'></image><text>联系平台</text><image class='go' mode="aspectFit" src='{{right}}'></image></view>
+  </view>
+</view>
