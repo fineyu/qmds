@@ -1,5 +1,5 @@
-// var rootDocment = "http://qmds.jsdianshi.com";
-var rootDocment = "https://qmds.jsdianshi.com";
+var rootDocment = "http://qmds.jsdianshi.com";
+// var rootDocment = "https://qmds.jsdianshi.com";
 
 var header = {
   'Accept': 'application/json',
